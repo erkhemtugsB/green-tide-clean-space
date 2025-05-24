@@ -23,11 +23,11 @@ export const Hero = () => {
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-4">
               <div className="flex items-center space-x-3 mb-6">
-                <img 
+                {/* <img 
                   src="/lovable-uploads/bc83d6f5-04c4-4699-bb93-6a392c58ffcf.png" 
                   alt="Green Tide Services Logo" 
                   className="w-16 h-16"
-                />
+                /> */}
                 <div>
                   <h1 className="text-5xl lg:text-6xl font-bold text-green-800 leading-tight">
                     Green Tide
