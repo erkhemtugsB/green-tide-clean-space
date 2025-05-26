@@ -27,30 +27,32 @@ export const Gallery = () => {
     }
   ];
 
-  const serviceImages = [
+  const teamImages = [
+    {
+      src: "/lovable-uploads/263e353d-292a-484a-9e2f-d4e4fd75a3c6.png",
+      alt: "Professional cleaning team member with duster"
+    },
+    {
+      src: "/lovable-uploads/bdcc6d21-95f5-46bd-8f24-d49fd195a520.png",
+      alt: "Eco-friendly cleaning in progress"
+    },
+    {
+      src: "/lovable-uploads/ffa2cb9b-7163-4866-ad4a-b62fe5f5d542.png",
+      alt: "Living room deep cleaning service"
+    },
+    {
+      src: "/lovable-uploads/c0cc5064-06cf-44ef-88f3-3d09186a6cf3.png",
+      alt: "Professional cleaner with eco supplies"
+    },
     {
       src: "/lovable-uploads/4f2f784a-534b-419a-8c91-fac68f400671.png",
-      alt: "Professional living room cleaning"
+      alt: "Clean organized living space"
     },
     {
       src: "/lovable-uploads/e0758129-fc99-4e94-8861-8d8ff564de3d.png",
-      alt: "Bathroom cleaning service"
-    },
-    {
-      src: "/lovable-uploads/c675468a-c353-4a12-b261-9fa5c7bf7888.png",
-      alt: "Kitchen cleaning with eco products"
+      alt: "Professional bathroom cleaning"
     }
   ];
-
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  const nextImage = () => {
-    setCurrentImageIndex((prev) => (prev + 1) % serviceImages.length);
-  };
-
-  const prevImage = () => {
-    setCurrentImageIndex((prev) => (prev - 1 + serviceImages.length) % serviceImages.length);
-  };
 
   return (
     <section className="py-20 bg-gradient-to-br from-green-50 to-white">
@@ -81,48 +83,22 @@ export const Gallery = () => {
           </div>
         </div>
 
-        {/* Service Images Carousel */}
+        {/* Team in Action Grid */}
         <div className="mb-16">
           <h3 className="text-3xl font-bold text-center text-gray-800 mb-8">Our Team in Action</h3>
-          <div className="relative max-w-4xl mx-auto">
-            <div className="relative overflow-hidden rounded-2xl shadow-2xl">
-              <img 
-                src={serviceImages[currentImageIndex].src}
-                alt={serviceImages[currentImageIndex].alt}
-                className="w-full h-96 object-cover transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-            </div>
-            
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={prevImage}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white border-0 shadow-lg"
-            >
-              <ChevronLeft className="w-6 h-6" />
-            </Button>
-            
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={nextImage}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white border-0 shadow-lg"
-            >
-              <ChevronRight className="w-6 h-6" />
-            </Button>
-
-            <div className="flex justify-center mt-6 space-x-2">
-              {serviceImages.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentImageIndex(index)}
-                  className={`w-3 h-3 rounded-full transition-colors ${
-                    index === currentImageIndex ? 'bg-green-600' : 'bg-gray-300'
-                  }`}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {teamImages.map((image, index) => (
+              <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                <img 
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-64 object-cover"
                 />
-              ))}
-            </div>
+                <div className="p-4">
+                  <p className="text-gray-600 text-center text-sm">{image.alt}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

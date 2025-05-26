@@ -85,23 +85,23 @@ export const Hero = () => {
           <div className="relative animate-fade-in">
             <div className="grid grid-cols-2 gap-4 relative z-10">
               <img 
-                src="/lovable-uploads/62750758-018c-43a6-985b-13a0bd4a6323.png" 
-                alt="Professional cleaning team" 
+                src="/lovable-uploads/263e353d-292a-484a-9e2f-d4e4fd75a3c6.png" 
+                alt="Professional cleaning team member" 
                 className="w-full h-48 object-cover rounded-xl shadow-lg"
               />
               <img 
-                src="/lovable-uploads/4f2f784a-534b-419a-8c91-fac68f400671.png" 
-                alt="Clean organized space" 
+                src="/lovable-uploads/bdcc6d21-95f5-46bd-8f24-d49fd195a520.png" 
+                alt="Professional cleaning in action" 
                 className="w-full h-48 object-cover rounded-xl shadow-lg"
               />
               <img 
-                src="/lovable-uploads/6ae941ce-4473-4a3d-a7ae-2cd383e270ff.png" 
+                src="/lovable-uploads/ffa2cb9b-7163-4866-ad4a-b62fe5f5d542.png" 
+                alt="Living room cleaning service" 
+                className="w-full h-48 object-cover rounded-xl shadow-lg"
+              />
+              <img 
+                src="/lovable-uploads/c0cc5064-06cf-44ef-88f3-3d09186a6cf3.png" 
                 alt="Eco-friendly cleaning supplies" 
-                className="w-full h-48 object-cover rounded-xl shadow-lg"
-              />
-              <img 
-                src="/lovable-uploads/a4c411d6-4469-41bf-9fed-022abce24f33.png" 
-                alt="Spotless results" 
                 className="w-full h-48 object-cover rounded-xl shadow-lg"
               />
             </div>
