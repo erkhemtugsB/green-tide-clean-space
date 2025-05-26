@@ -6,24 +6,24 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 export const Gallery = () => {
   const beforeAfterImages = [
     {
-      before: "/lovable-uploads/ccdbf1ff-26a4-4f36-891b-249bb20e6261.png",
-      after: "/lovable-uploads/ccdbf1ff-26a4-4f36-891b-249bb20e6261.png",
-      title: "Luxury Bathroom Deep Clean"
+      before: "/lovable-uploads/before-after.png",
+      after: "/lovable-uploads/before-after.png",
+      title: "Bathroom Deep Clean"
     },
     {
-      before: "/lovable-uploads/64ae63db-ff0b-4dff-af3a-69ceecf5fed2.png",
-      after: "/lovable-uploads/64ae63db-ff0b-4dff-af3a-69ceecf5fed2.png",
-      title: "Master Bedroom Organization"
+      before: "/lovable-uploads/before-after2.png",
+      after: "/lovable-uploads/before-after2.png",
+      title: "Kitchen Cleaning"
     },
     {
-      before: "/lovable-uploads/ece1282d-da54-4da1-9f9d-cbe8ce8a4a9e.png",
-      after: "/lovable-uploads/ece1282d-da54-4da1-9f9d-cbe8ce8a4a9e.png",
+      before: "/lovable-uploads/before-after3.png",
+      after: "/lovable-uploads/before-after3.png",
       title: "Living Room Deep Clean"
     },
     {
-      before: "/lovable-uploads/1b235911-75a9-4741-be7f-4e28d44ae586.png",
-      after: "/lovable-uploads/1b235911-75a9-4741-be7f-4e28d44ae586.png",
-      title: "Refrigerator Interior Cleaning"
+      before: "/lovable-uploads/before-after4.png",
+      after: "/lovable-uploads/before-after4.png",
+      title: "Bathroom Cleaning"
     }
   ];
 
@@ -41,7 +41,7 @@ export const Gallery = () => {
       alt: "Spotless kitchen sink and faucet cleaning"
     },
     {
-      src: "/lovable-uploads/7f6e63dd-b370-4115-93fa-fe0914ca2ed3.png",
+      src: "/lovable-uploads/stove.jpeg",
       alt: "Deep cleaned oven interior and stovetop"
     }
   ];
