@@ -22,18 +22,11 @@ export const Hero = () => {
           {/* Content */}
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-4">
-              <div className="flex items-center space-x-3 mb-6">
-                {/* <img 
-                  src="/lovable-uploads/bc83d6f5-04c4-4699-bb93-6a392c58ffcf.png" 
-                  alt="Green Tide Services Logo" 
-                  className="w-16 h-16"
-                /> */}
-                <div>
-                  <h1 className="text-5xl lg:text-6xl font-bold text-green-800 leading-tight">
-                    Green Tide
-                  </h1>
-                  <p className="text-2xl text-green-700 font-medium">Services</p>
-                </div>
+              <div className="mb-6">
+                <h1 className="text-5xl lg:text-6xl font-bold text-green-800 leading-tight">
+                  Green Tide
+                </h1>
+                <p className="text-2xl text-green-700 font-medium">Services</p>
               </div>
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 leading-tight">
                 Eco-Friendly Cleaning & Organization
@@ -88,13 +81,28 @@ export const Hero = () => {
             </div>
           </div>
 
-          {/* Hero Image */}
+          {/* 2x2 Image Grid */}
           <div className="relative animate-fade-in">
-            <div className="relative z-10">
+            <div className="grid grid-cols-2 gap-4 relative z-10">
               <img 
                 src="/lovable-uploads/62750758-018c-43a6-985b-13a0bd4a6323.png" 
-                alt="Professional cleaning team in action" 
-                className="w-full h-auto rounded-2xl shadow-2xl"
+                alt="Professional cleaning team" 
+                className="w-full h-48 object-cover rounded-xl shadow-lg"
+              />
+              <img 
+                src="/lovable-uploads/4f2f784a-534b-419a-8c91-fac68f400671.png" 
+                alt="Clean organized space" 
+                className="w-full h-48 object-cover rounded-xl shadow-lg"
+              />
+              <img 
+                src="/lovable-uploads/6ae941ce-4473-4a3d-a7ae-2cd383e270ff.png" 
+                alt="Eco-friendly cleaning supplies" 
+                className="w-full h-48 object-cover rounded-xl shadow-lg"
+              />
+              <img 
+                src="/lovable-uploads/a4c411d6-4469-41bf-9fed-022abce24f33.png" 
+                alt="Spotless results" 
+                className="w-full h-48 object-cover rounded-xl shadow-lg"
               />
             </div>
             <div className="absolute -bottom-4 -right-4 w-full h-full bg-green-200 rounded-2xl -z-10"></div>

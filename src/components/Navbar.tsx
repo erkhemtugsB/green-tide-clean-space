@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -19,12 +18,7 @@ export const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <img 
-              src="/lovable-uploads/bc83d6f5-04c4-4699-bb93-6a392c58ffcf.png" 
-              alt="Green Tide Services Logo" 
-              className="w-10 h-10"
-            />
+          <div className="flex items-center">
             <div>
               <h1 className="text-xl font-bold text-gray-800">Green Tide Services</h1>
               <p className="text-xs text-green-600">Eco-Friendly Cleaning</p>
