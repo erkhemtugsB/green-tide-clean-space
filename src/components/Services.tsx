@@ -12,7 +12,8 @@ export const Services = () => {
         "Doors and door frame spots cleaned",
         "Baseboards dusted or wiped",
         "Doorknobs and showers disinfected",
-        "Light fixtures & ceiling fans dusted"
+        "Light fixtures & ceiling fans dusted",
+        "Airbnb and rental property cleaning",
       ]
     },
     {
