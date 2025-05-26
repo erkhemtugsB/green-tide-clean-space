@@ -38,7 +38,9 @@ export const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-green-400" />
-                <span>(747) 355-6316</span>
+                <a href="tel:+17473556316" className="hover:underline">
+                  (747) 355-6316
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-green-400" />
