@@ -53,58 +53,58 @@ export const Contact = () => {
               </p>
             </div>
 
-            <div className="space-y-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6">
               <Card className="border-0 shadow-md bg-white/80 backdrop-blur-sm">
-                <CardContent className="p-6">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                      <Phone className="w-6 h-6 text-green-600" />
+                <CardContent className="p-4 sm:p-6">
+                  <div className="flex items-center space-x-3 sm:space-x-4">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" />
                     </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-800">Phone</h4>
-                      <p className="text-gray-600">+1 (747) 355-6316</p>
+                    <div className="min-w-0 flex-1">
+                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Phone</h4>
+                      <p className="text-gray-600 text-sm sm:text-base break-all">+1 (747) 355-6316</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
               <Card className="border-0 shadow-md bg-white/80 backdrop-blur-sm">
-                <CardContent className="p-6">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                      <Mail className="w-6 h-6 text-green-600" />
+                <CardContent className="p-4 sm:p-6">
+                  <div className="flex items-center space-x-3 sm:space-x-4">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" />
                     </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-800">Email</h4>
-                      <p className="text-gray-600">greentidemadi@gmail.com</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="border-0 shadow-md bg-white/80 backdrop-blur-sm">
-                <CardContent className="p-6">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                      <MapPin className="w-6 h-6 text-green-600" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-800">Address</h4>
-                      <p className="text-gray-600">12206 Magnolia Blvd, Los Angeles, CA</p>
+                    <div className="min-w-0 flex-1">
+                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Email</h4>
+                      <p className="text-gray-600 text-sm sm:text-base break-all">greentidemadi@gmail.com</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
               <Card className="border-0 shadow-md bg-white/80 backdrop-blur-sm">
-                <CardContent className="p-6">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                      <Instagram className="w-6 h-6 text-green-600" />
+                <CardContent className="p-4 sm:p-6">
+                  <div className="flex items-center space-x-3 sm:space-x-4">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" />
                     </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-800">Instagram</h4>
-                      <p className="text-gray-600">@greentide_cleaning</p>
+                    <div className="min-w-0 flex-1">
+                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Address</h4>
+                      <p className="text-gray-600 text-sm sm:text-base">12206 Magnolia Blvd, Los Angeles, CA</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-0 shadow-md bg-white/80 backdrop-blur-sm">
+                <CardContent className="p-4 sm:p-6">
+                  <div className="flex items-center space-x-3 sm:space-x-4">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <Instagram className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" />
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Instagram</h4>
+                      <p className="text-gray-600 text-sm sm:text-base break-all">@greentide_cleaning</p>
                     </div>
                   </div>
                 </CardContent>

@@ -6,43 +6,43 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 export const Gallery = () => {
   const beforeAfterImages = [
     {
-      before: "/lovable-uploads/d535291e-0097-41d5-a0e6-458879379ff2.png",
-      after: "/lovable-uploads/d535291e-0097-41d5-a0e6-458879379ff2.png",
-      title: "Bathroom Deep Clean"
+      before: "/lovable-uploads/ccdbf1ff-26a4-4f36-891b-249bb20e6261.png",
+      after: "/lovable-uploads/ccdbf1ff-26a4-4f36-891b-249bb20e6261.png",
+      title: "Luxury Bathroom Deep Clean"
     },
     {
-      before: "/lovable-uploads/0eada8ba-a5d7-4f8d-b318-a30b9eaedd43.png",
-      after: "/lovable-uploads/0eada8ba-a5d7-4f8d-b318-a30b9eaedd43.png",
-      title: "Toilet Restoration"
+      before: "/lovable-uploads/64ae63db-ff0b-4dff-af3a-69ceecf5fed2.png",
+      after: "/lovable-uploads/64ae63db-ff0b-4dff-af3a-69ceecf5fed2.png",
+      title: "Master Bedroom Organization"
     },
     {
-      before: "/lovable-uploads/6ae941ce-4473-4a3d-a7ae-2cd383e270ff.png",
-      after: "/lovable-uploads/6ae941ce-4473-4a3d-a7ae-2cd383e270ff.png",
-      title: "Stove Top Cleaning"
+      before: "/lovable-uploads/ece1282d-da54-4da1-9f9d-cbe8ce8a4a9e.png",
+      after: "/lovable-uploads/ece1282d-da54-4da1-9f9d-cbe8ce8a4a9e.png",
+      title: "Living Room Deep Clean"
     },
     {
-      before: "/lovable-uploads/a4c411d6-4469-41bf-9fed-022abce24f33.png",
-      after: "/lovable-uploads/a4c411d6-4469-41bf-9fed-022abce24f33.png",
-      title: "Living Room Organization"
+      before: "/lovable-uploads/1b235911-75a9-4741-be7f-4e28d44ae586.png",
+      after: "/lovable-uploads/1b235911-75a9-4741-be7f-4e28d44ae586.png",
+      title: "Refrigerator Interior Cleaning"
     }
   ];
 
-  const teamImages = [
+  const additionalImages = [
     {
-      src: "/lovable-uploads/d169a990-2517-49b0-8304-63b1e7f39435.png",
-      alt: "Professional kitchen cleaning service"
+      src: "/lovable-uploads/e664cfa9-2d92-40ea-a964-69f0e3979818.png",
+      alt: "Beautifully organized bedroom with heart decorations"
     },
     {
-      src: "/lovable-uploads/b4d81ca9-1348-4735-8876-106ead4021cf.png",
-      alt: "Living room deep cleaning service"
+      src: "/lovable-uploads/1c6a5aba-0fa9-4d19-a1b3-8acdea358c6e.png",
+      alt: "Clean and organized bedroom with yellow accent wall"
     },
     {
-      src: "/lovable-uploads/90aa6849-0ba1-4ce7-b5ca-6d6790545060.png",
-      alt: "Professional bathroom cleaning"
+      src: "/lovable-uploads/42e94c92-7b71-4200-be21-acccff38db8a.png",
+      alt: "Spotless kitchen sink and faucet cleaning"
     },
     {
-      src: "/lovable-uploads/299481e1-d776-4072-9ae8-b825c8ffa93b.png",
-      alt: "Eco-friendly kitchen cleaning with natural products"
+      src: "/lovable-uploads/7f6e63dd-b370-4115-93fa-fe0914ca2ed3.png",
+      alt: "Deep cleaned oven interior and stovetop"
     }
   ];
 
@@ -75,11 +75,11 @@ export const Gallery = () => {
           </div>
         </div>
 
-        {/* Team in Action Gallery */}
+        {/* Additional Gallery */}
         <div className="mb-16">
-          <h3 className="text-3xl font-bold text-center text-gray-800 mb-8">Our Team in Action</h3>
+          <h3 className="text-3xl font-bold text-center text-gray-800 mb-8">Our Professional Work</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {teamImages.map((image, index) => (
+            {additionalImages.map((image, index) => (
               <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                 <img 
                   src={image.src}
