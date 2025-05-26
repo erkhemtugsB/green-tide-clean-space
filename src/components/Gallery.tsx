@@ -27,7 +27,7 @@ export const Gallery = () => {
     }
   ];
 
-  const additionalImages = [
+  const galleryImages = [
     {
       src: "/lovable-uploads/e664cfa9-2d92-40ea-a964-69f0e3979818.png",
       alt: "Beautifully organized bedroom with heart decorations"
@@ -57,7 +57,7 @@ export const Gallery = () => {
         </div>
 
         {/* Before/After Gallery */}
-        <div className="mb-16">
+        <div className="mb-20">
           <h3 className="text-3xl font-bold text-center text-gray-800 mb-8">Before & After</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {beforeAfterImages.map((image, index) => (
@@ -75,11 +75,11 @@ export const Gallery = () => {
           </div>
         </div>
 
-        {/* Additional Gallery */}
-        <div className="mb-16">
+        {/* Gallery Section */}
+        <div>
           <h3 className="text-3xl font-bold text-center text-gray-800 mb-8">Our Professional Work</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {additionalImages.map((image, index) => (
+            {galleryImages.map((image, index) => (
               <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                 <img 
                   src={image.src}
