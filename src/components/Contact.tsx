@@ -48,7 +48,7 @@ export const Contact = () => {
             <div>
               <h3 className="text-3xl font-bold text-gray-800 mb-6">Get in Touch</h3>
               <p className="text-lg text-gray-600 mb-8">
-                Our team responds quickly and is always happy to assist with any questions, 
+                Our team responds quickly and is always happy to assist with any questions,
                 service requests, or custom inquiries.
               </p>
             </div>
@@ -62,8 +62,9 @@ export const Contact = () => {
                     </div>
                     <div className="min-w-0 flex-1">
                       <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Phone</h4>
-                      <p className="text-gray-600 text-sm sm:text-base break-all">+1 (747) 355-6316</p>
-                    </div>
+                      <a href="tel:+17473556316" className="font-semibold text-gray-800 hover:underline">
+                        (747) 355-6316
+                      </a>                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -96,7 +97,7 @@ export const Contact = () => {
                 </CardContent>
               </Card>
 
-              <Card className="border-0 shadow-md bg-white/80 backdrop-blur-sm">
+              {/* <Card className="border-0 shadow-md bg-white/80 backdrop-blur-sm">
                 <CardContent className="p-4 sm:p-6">
                   <div className="flex items-center space-x-3 sm:space-x-4">
                     <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
@@ -108,7 +109,7 @@ export const Contact = () => {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
+              </Card> */}
             </div>
           </div>
 
