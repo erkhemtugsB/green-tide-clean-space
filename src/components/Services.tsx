@@ -99,7 +99,7 @@ export const Services = () => {
         <div className="mt-16 grid md:grid-cols-2 gap-8 items-center">
           <div className="flex justify-center items-center">
             <img
-              src="/lovable-uploads/bathroom2.webp"
+              src="/lovable-uploads/bed.jpeg"
               alt="Green Tide Services Detail Sheet"
               className="max-w-xs w-full h-auto rounded-xl shadow-lg"
             />
