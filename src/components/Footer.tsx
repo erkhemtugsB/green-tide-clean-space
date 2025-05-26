@@ -9,9 +9,9 @@ export const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <img 
-                src="/lovable-uploads/bc83d6f5-04c4-4699-bb93-6a392c58ffcf.png" 
-                alt="Green Tide Services Logo" 
+              <img
+                src="/lovable-uploads/bc83d6f5-04c4-4699-bb93-6a392c58ffcf.png"
+                alt="Green Tide Services Logo"
                 className="w-12 h-12"
               />
               <div>
@@ -22,6 +22,14 @@ export const Footer = () => {
             <p className="text-gray-300">
               Creating cleaner, more peaceful spaces safely and sustainably throughout Los Angeles.
             </p>
+            <a
+              href="https://www.instagram.com/greentide_cleaning/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center"
+            >
+              <Instagram className="w-5 h-5 text-green-400" />
+            </a>
           </div>
 
           {/* Contact Info */}
@@ -40,10 +48,10 @@ export const Footer = () => {
                 <MapPin className="w-5 h-5 text-green-400" />
                 <span>12206 Magnolia Blvd, Los Angeles, CA</span>
               </div>
-              <div className="flex items-center space-x-3">
+              {/* <div className="flex items-center space-x-3">
                 <Instagram className="w-5 h-5 text-green-400" />
                 <span>@greentide_cleaning</span>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -62,7 +70,9 @@ export const Footer = () => {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
-          <p>&copy; 2024 Green Tide Services. All rights reserved.</p>
+
+          <p>&copy; 2025 Green Tide Services. All rights reserved.</p>
+
         </div>
       </div>
     </footer>
