@@ -29,28 +29,20 @@ export const Gallery = () => {
 
   const teamImages = [
     {
-      src: "/lovable-uploads/263e353d-292a-484a-9e2f-d4e4fd75a3c6.png",
-      alt: "Professional cleaning team member with duster"
+      src: "/lovable-uploads/d169a990-2517-49b0-8304-63b1e7f39435.png",
+      alt: "Professional kitchen cleaning service"
     },
     {
-      src: "/lovable-uploads/bdcc6d21-95f5-46bd-8f24-d49fd195a520.png",
-      alt: "Eco-friendly cleaning in progress"
-    },
-    {
-      src: "/lovable-uploads/ffa2cb9b-7163-4866-ad4a-b62fe5f5d542.png",
+      src: "/lovable-uploads/b4d81ca9-1348-4735-8876-106ead4021cf.png",
       alt: "Living room deep cleaning service"
     },
     {
-      src: "/lovable-uploads/c0cc5064-06cf-44ef-88f3-3d09186a6cf3.png",
-      alt: "Professional cleaner with eco supplies"
-    },
-    {
-      src: "/lovable-uploads/4f2f784a-534b-419a-8c91-fac68f400671.png",
-      alt: "Clean organized living space"
-    },
-    {
-      src: "/lovable-uploads/e0758129-fc99-4e94-8861-8d8ff564de3d.png",
+      src: "/lovable-uploads/90aa6849-0ba1-4ce7-b5ca-6d6790545060.png",
       alt: "Professional bathroom cleaning"
+    },
+    {
+      src: "/lovable-uploads/299481e1-d776-4072-9ae8-b825c8ffa93b.png",
+      alt: "Eco-friendly kitchen cleaning with natural products"
     }
   ];
 
@@ -83,10 +75,10 @@ export const Gallery = () => {
           </div>
         </div>
 
-        {/* Team in Action Grid */}
+        {/* Team in Action Gallery */}
         <div className="mb-16">
           <h3 className="text-3xl font-bold text-center text-gray-800 mb-8">Our Team in Action</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {teamImages.map((image, index) => (
               <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                 <img 
