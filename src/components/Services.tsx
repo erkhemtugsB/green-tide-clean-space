@@ -11,7 +11,7 @@ export const Services = () => {
       features: [
         "Doors and door frame spots cleaned",
         "Baseboards dusted or wiped",
-        "Doorknobs and showers disinfected", 
+        "Doorknobs and showers disinfected",
         "Light fixtures & ceiling fans dusted"
       ]
     },
@@ -69,8 +69,8 @@ export const Services = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
-            <Card 
-              key={index} 
+            <Card
+              key={index}
               className="group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-0 shadow-lg bg-gradient-to-br from-white to-green-50"
             >
               <CardContent className="p-6">
@@ -81,7 +81,7 @@ export const Services = () => {
                   <h3 className="text-xl font-bold text-gray-800 mb-2">{service.title}</h3>
                   <p className="text-gray-600 text-sm">{service.description}</p>
                 </div>
-                
+
                 <ul className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start text-sm text-gray-700">
@@ -97,11 +97,11 @@ export const Services = () => {
 
         {/* Service Image */}
         <div className="mt-16 grid md:grid-cols-2 gap-8 items-center">
-          <div className="space-y-6">
-            <img 
-              src="/lovable-uploads/c2be2eb8-ee0c-42b0-b283-fa1a0b4e460f.png" 
-              alt="Green Tide Services Detail Sheet" 
-              className="w-full h-auto rounded-xl shadow-lg"
+          <div className="flex justify-center items-center">
+            <img
+              src="/lovable-uploads/bathroom2.webp"
+              alt="Green Tide Services Detail Sheet"
+              className="max-w-xs w-full h-auto rounded-xl shadow-lg"
             />
           </div>
           <div className="space-y-6">
