@@ -29,7 +29,7 @@ export const Hero = () => {
                 <p className="text-2xl text-green-700 font-medium">Services</p>
               </div>
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 leading-tight">
-                Eco-Friendly Cleaning & Organization
+                Eco-Friendly Cleaning & Organizing
               </h2>
               <p className="text-xl text-gray-600 leading-relaxed">
                 We specialize in creating cleaner, more peaceful spaces using eco-friendly products.

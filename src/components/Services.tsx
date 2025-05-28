@@ -47,7 +47,7 @@ export const Services = () => {
       features: [
         "Inside fridge cleaning",
         "Inside oven deep clean",
-        "Inside cabinets organization",
+        "Inside cabinets Organizing",
         "Interior windows",
         "Laundry & folding service"
       ]

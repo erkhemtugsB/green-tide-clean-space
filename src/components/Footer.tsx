@@ -66,7 +66,7 @@ export const Footer = () => {
               <li>• Deep Cleaning</li>
               <li>• Move-in/Move-out</li>
               <li>• Recurring Cleaning</li>
-              <li>• Organization Services</li>
+              <li>• Organizing Services</li>
             </ul>
           </div>
         </div>
