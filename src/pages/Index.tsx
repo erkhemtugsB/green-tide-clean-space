@@ -8,6 +8,7 @@ import { About } from "@/components/About";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { Loading } from "@/components/Loading";
+import { ReviewSection } from "@/components/ReviewSection";
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -30,6 +31,7 @@ const Index = () => {
       <div className="pt-16"> {/* Add padding-top to account for fixed navbar */}
         <div id="hero">
           <Hero />
+          <ReviewSection />
         </div>
         <div id="services">
           <Services />
