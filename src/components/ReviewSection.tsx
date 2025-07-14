@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 
 export const ReviewSection = () => {
@@ -17,22 +18,24 @@ export const ReviewSection = () => {
       color: "text-red-600",
       stars: 5,
       description: "2 reviews"
-    },
-    {
-      name: "Google",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png",
-      link: "https://www.google.com/search?sca_esv=188198e14d20be9a&sxsrf=AE3TifM3ju574ZOTyWa2TEM27nTslWzRyw:1752376471325&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E7tGRcl3PMpHniPbd41QJDOGXqr41AP3ilZp2dnXwI8JCiBRQFJkbKqRmHk9Cqkwh7uqlgceUhLyAnahq_jniHy_oQQ5sN6LO_hC83Y41BhWEwEEjw%3D%3D&q=Green+tide+services+Reviews&sa=X&ved=2ahUKEwiM-9eI77iOAxWol4kEHW8dBCoQ0bkNegQIIBAD&biw=1536&bih=730&dpr=1.25",
-      color: "text-blue-600",
-      stars: 5,
-      description: "10 reviews"
     }
+    // Removed Google entry
   ];
+
+  useEffect(() => {
+    // Dynamically load Elfsight script
+    const script = document.createElement("script");
+    script.src = "https://static.elfsight.com/platform/platform.js";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <section className="py-20 bg-green-50">
       <div className="container mx-auto px-4">
-
-
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           {reviews.map((review, index) => (
             <Card key={index} className="text-center bg-white border border-gray-100 hover:shadow-lg transition-shadow">
@@ -60,6 +63,11 @@ export const ReviewSection = () => {
               </CardContent>
             </Card>
           ))}
+          {/* Elfsight Google Reviews Widget */}
+          <div className="bg-white border border-gray-100 p-6 flex items-center justify-center">
+            {/* Elfsight Google Reviews | Google - GreenTideCleaning.com */}
+            <div className="elfsight-app-376b1632-72b2-4d8c-9a55-27b171498df6" data-elfsight-app-lazy></div>
+          </div>
         </div>
       </div>
     </section>
