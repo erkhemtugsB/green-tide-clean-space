@@ -64,8 +64,10 @@ export const Hero = () => {
               <div className="flex items-center space-x-3 p-4 bg-white/70 rounded-xl backdrop-blur-sm">
                 <MapPin className="w-6 h-6 text-green-600" />
                 <div>
-                  <p className="text-sm text-gray-500">Location</p>
+                  <p className="text-sm text-gray-500">Service Area</p>
                   <p className="font-semibold text-gray-800">Los Angeles, CA</p>
+                  <p className="font-semibold text-gray-800">Seattle, WA</p>
+
                 </div>
               </div>
               <div className="flex items-center space-x-3 p-4 bg-white/70 rounded-xl backdrop-blur-sm">
