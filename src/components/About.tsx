@@ -1,31 +1,8 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Clock, Heart, Award } from "lucide-react";
+import aboutImage from "@/assets/about.png";
 
 export const About = () => {
-  const features = [
-    {
-      icon: Shield,
-      title: "Safe & Eco-Friendly",
-      description: "Non-toxic products safe for your family and pets"
-    },
-    {
-      icon: Clock,
-      title: "Reliable Service",
-      description: "Punctual, consistent cleaning on your schedule"
-    },
-    {
-      icon: Heart,
-      title: "Care & Attention",
-      description: "Every detail matters in creating your peaceful space"
-    },
-    {
-      icon: Award,
-      title: "Experienced Team",
-      description: "2+ years serving the Los Angeles community"
-    }
-  ];
-
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -38,36 +15,37 @@ export const About = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div className="space-y-6">
-            <h3 className="text-3xl font-bold text-gray-800">Our Mission</h3>
+            <h3 className="text-3xl font-bold text-gray-800">Who We Are</h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              At Green Tide Services, we believe that a clean space creates a peaceful mind. Our team is dedicated to 
-              providing exceptional cleaning services while protecting the environment and your family's health.
+              Hi! We're Diana and Marina, Slavic founders of Green Tide Services.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              We specialize in eco-friendly residential and commercial cleaning, using non-toxic products and modern 
-              tools to deliver detail-focused service with care. Every space deserves to sparkle safely and sustainably.
+              We built this company around one simple idea - cleaning should be reliable, detailed, and stress-free.
+              Our background shaped a strong work ethic and attention to detail that we bring into every home.
             </p>
-            
-            <div className="bg-green-50 p-6 rounded-xl border-l-4 border-green-500">
-              <p className="text-green-800 font-semibold italic">
-                "We're here to help you create a cleaner, more peaceful space. Our team responds quickly 
-                and is always happy to assist with any questions or custom inquiries."
-              </p>
-            </div>
+            <p className="text-lg text-gray-600 leading-relaxed">
+              We personally care about every job, and our trained team delivers results you can see the moment you walk
+              in.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed font-medium">
+              If you're looking for a cleaning service you can trust - you're in the right place.
+            </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-6">
-            {features.map((feature, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow border-0 bg-gradient-to-br from-green-50 to-white">
-                <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <feature.icon className="w-8 h-8 text-green-600" />
-                  </div>
-                  <h4 className="font-bold text-gray-800 mb-2">{feature.title}</h4>
-                  <p className="text-gray-600 text-sm">{feature.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+          <div>
+            <Card className="overflow-hidden border-0 shadow-lg bg-gradient-to-br from-emerald-900 to-teal-900">
+              <img
+                src={aboutImage}
+                alt="Green Tide Services founders and team"
+                className="w-full h-72 object-cover"
+              />
+              <CardContent className="p-8 text-center">
+                <h4 className="text-4xl font-bold text-white mb-4">Professional Team. Consistent Results.</h4>
+                <p className="text-xl text-emerald-100 leading-relaxed">
+                  Our trained cleaners follow our standards to deliver the same high-quality service every time.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>
