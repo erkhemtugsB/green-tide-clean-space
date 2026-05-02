@@ -32,16 +32,18 @@ const Index = () => {
       <div className="pt-16"> {/* Add padding-top to account for fixed navbar */}
         <div id="hero">
           <Hero />
+        </div>
+        <div id="reviews">
           <ReviewSection />
+        </div>
+        <div id="about">
+          <About />
         </div>
         <div id="services">
           <Services />
         </div>
         <div id="gallery">
           <Gallery />
-        </div>
-        <div id="about">
-          <About />
         </div>
         <div id="faq">
           <FAQ />

@@ -1,29 +1,22 @@
 
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import gal2 from "@/assets/gal2.png";
+import gal3 from "@/assets/gal3.png";
+import gal4 from "@/assets/gal4.png";
+import gal5 from "@/assets/gal5.png";
 
 export const Gallery = () => {
   const beforeAfterImages = [
     {
-      before: "/lovable-uploads/before-after.png",
-      after: "/lovable-uploads/before-after.png",
-      title: "Bathroom Deep Clean"
+      src: gal2,
     },
     {
-      before: "/lovable-uploads/before-after2.png",
-      after: "/lovable-uploads/before-after2.png",
-      title: "Kitchen Cleaning"
+      src: gal3,
     },
     {
-      before: "/lovable-uploads/before-after3.png",
-      after: "/lovable-uploads/before-after3.png",
-      title: "Living Room Deep Clean"
+      src: gal4,
     },
     {
-      before: "/lovable-uploads/before-after4.png",
-      after: "/lovable-uploads/before-after4.png",
-      title: "Bathroom Cleaning"
+      src: gal5,
     }
   ];
 
@@ -59,17 +52,14 @@ export const Gallery = () => {
         {/* Before/After Gallery */}
         <div className="mb-20">
           <h3 className="text-3xl font-bold text-center text-gray-800 mb-8">Before & After</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 gap-3 sm:gap-4 max-w-3xl mx-auto">
             {beforeAfterImages.map((image, index) => (
               <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                <img 
-                  src={image.before} 
-                  alt={image.title}
-                  className="w-full h-48 object-cover"
+                <img
+                  src={image.src}
+                  alt="Before and after cleaning result"
+                  className="w-full h-auto object-contain"
                 />
-                <div className="p-4">
-                  <h4 className="font-semibold text-gray-800 text-center">{image.title}</h4>
-                </div>
               </div>
             ))}
           </div>
