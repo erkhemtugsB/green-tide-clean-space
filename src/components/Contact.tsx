@@ -105,8 +105,10 @@ export const Contact = () => {
                       <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" />
                     </div>
                     <div className="min-w-0 flex-1">
-                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Address</h4>
-                      <p className="text-gray-600 text-sm sm:text-base">12206 Magnolia Blvd, Los Angeles, CA</p>
+                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Service Area</h4>
+                      <p className="text-gray-600 text-sm sm:text-base">Los Angeles, CA</p>
+                      <p className="text-gray-600 text-sm sm:text-base">Seattle, WA</p>
+
                     </div>
                   </div>
                 </CardContent>
