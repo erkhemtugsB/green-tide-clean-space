@@ -1,6 +1,10 @@
 
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin } from "lucide-react";
+import hero1 from "@/assets/hero1.png";
+import hero2 from "@/assets/hero2.png";
+import hero3 from "@/assets/hero3.png";
+import hero4 from "@/assets/hero4.png";
 
 export const Hero = () => {
   const scrollToContact = () => {
@@ -87,23 +91,23 @@ export const Hero = () => {
           <div className="relative animate-fade-in">
             <div className="grid grid-cols-2 gap-4 relative z-10">
               <img
-                src="/lovable-uploads/263e353d-292a-484a-9e2f-d4e4fd75a3c6.png"
-                alt="Professional cleaning team member"
+                src={hero1}
+                alt="Neatly made bedroom"
                 className="w-full h-48 object-cover rounded-xl shadow-lg"
               />
               <img
-                src="/lovable-uploads/bdcc6d21-95f5-46bd-8f24-d49fd195a520.png"
-                alt="Professional cleaning in action"
+                src={hero2}
+                alt="Clean bathroom essentials"
                 className="w-full h-48 object-cover rounded-xl shadow-lg"
               />
               <img
-                src="/lovable-uploads/ffa2cb9b-7163-4866-ad4a-b62fe5f5d542.png"
-                alt="Living room cleaning service"
+                src={hero3}
+                alt="Spotless modern kitchen"
                 className="w-full h-48 object-cover rounded-xl shadow-lg"
               />
               <img
-                src="/lovable-uploads/c0cc5064-06cf-44ef-88f3-3d09186a6cf3.png"
-                alt="Eco-friendly cleaning supplies"
+                src={hero4}
+                alt="Clean and cozy living room"
                 className="w-full h-48 object-cover rounded-xl shadow-lg"
               />
             </div>
