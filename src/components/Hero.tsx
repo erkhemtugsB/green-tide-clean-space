@@ -49,14 +49,14 @@ export const Hero = () => {
               >
                 Get Free Quote
               </Button>
-              {/* <Button
+              <Button
                 variant="outline"
                 size="lg"
                 className="border-green-600 text-green-600 hover:bg-green-50 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300"
-                onClick={() => window.open('tel:+17473556316')}
+                onClick={() => window.open('https://m.me/diana.podgornaia.2025', '_blank')}
               >
-                Book Now
-              </Button>           */}
+                Chat Us
+              </Button>
               <Button
                 variant="outline"
                 size="lg"
