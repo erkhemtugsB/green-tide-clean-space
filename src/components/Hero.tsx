@@ -53,7 +53,7 @@ export const Hero = () => {
                 variant="outline"
                 size="lg"
                 className="border-green-600 text-green-600 hover:bg-green-50 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300"
-                onClick={() => window.open('https://m.me/diana.podgornaia.2025', '_blank')}
+                onClick={() => window.open('sms:+17473556316', '_self')}
               >
                 Message Us
               </Button>
