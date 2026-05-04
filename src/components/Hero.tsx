@@ -60,7 +60,7 @@ export const Hero = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="border-green-600 text-green-600 hover:bg-green-50 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300"
+                className="w-full sm:w-auto border-green-600 text-green-600 hover:bg-green-50 px-5 py-3 text-base font-semibold rounded-full transition-all duration-300 whitespace-nowrap"
                 onClick={() => window.open('tel:+17473556316')}
               >
                 <Phone className="w-5 h-5 mr-2" />

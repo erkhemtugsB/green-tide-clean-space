@@ -37,11 +37,11 @@ export const About = () => {
               <img
                 src={aboutImage}
                 alt="Green Tide Services founders and team"
-                className="w-full h-72 object-cover"
+                className="w-full h-auto object-contain"
               />
-              <CardContent className="p-8 text-center">
-                <h4 className="text-4xl font-bold text-white mb-4">Professional Team. Consistent Results.</h4>
-                <p className="text-xl text-emerald-100 leading-relaxed">
+              <CardContent className="p-5 sm:p-8 text-center">
+                <h4 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 sm:mb-4">Professional Team. Consistent Results.</h4>
+                <p className="text-base sm:text-lg lg:text-xl text-emerald-100 leading-relaxed">
                   Our trained cleaners follow our standards to deliver the same high-quality service every time.
                 </p>
               </CardContent>
